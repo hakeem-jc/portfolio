@@ -849,6 +849,12 @@ hr {
   z-index: 11;
 }
 
+.social-list-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .st-hero.st-style1 {
   height: 710px;
   display: flex;
