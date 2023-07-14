@@ -118,6 +118,23 @@
     }
 }
 
+
+.st-social-link-container {
+  background-color: #101624;
+  border: 1px solid #232935;
+  border-right: 0;
+  border-radius: 50px;
+  height: 80px;
+  width: 448px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .st-social-link {
     display: flex;
 }
