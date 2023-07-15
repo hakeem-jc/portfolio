@@ -64,8 +64,8 @@
     1. Placeholder
   --------------------------------------------------------------*/
   function preloaderSetup() {
-    $(".st-perloader").fadeOut();
-    $("st-perloader-in").delay(150).fadeOut("slow");
+    $(".perloader").fadeOut();
+    $("perloader-in").delay(150).fadeOut("slow");
   }
 
   /*--------------------------------------------------------------
@@ -73,7 +73,7 @@
   --------------------------------------------------------------*/
   function dynamicBackground() {
     // Background images
-    $('.st-dynamic-bg').each(function () {
+    $('.dynamic-bg').each(function () {
       var src = $(this).attr('data-src');
       $(this).css({
         'background-image': 'url(' + src + ')'
@@ -85,12 +85,12 @@
     3. Menu
   --------------------------------------------------------------*/
   function mainMenu() {
-    $('.st-nav').append('<span class="st-munu-toggle"><span></span></span>');
-    $('.menu-item-has-children').append('<span class="st-munu-dropdown-toggle"></span>');
-    $('.st-munu-toggle').on('click', function () {
-      $(this).toggleClass("st-toggle-active").siblings('.st-nav-list').slideToggle();;
+    $('.nav').append('<span class="munu-toggle"><span></span></span>');
+    $('.menu-item-has-children').append('<span class="munu-dropdown-toggle"></span>');
+    $('.munu-toggle').on('click', function () {
+      $(this).toggleClass("toggle-active").siblings('.nav-list').slideToggle();;
     });
-    $('.st-munu-dropdown-toggle').on('click', function () {
+    $('.munu-dropdown-toggle').on('click', function () {
       $(this).toggleClass('active').siblings('ul').slideToggle();
     });
   }
@@ -101,9 +101,9 @@
   function stickyHeader() {
     var scroll = $(window).scrollTop();
     if (scroll >= 10) {
-      $('.st-sticky-header').addClass('st-sticky-active');
+      $('.sticky-header').addClass('sticky-active');
     } else {
-      $('.st-sticky-header').removeClass('st-sticky-active');
+      $('.sticky-header').removeClass('sticky-active');
     }
   }
 
@@ -112,7 +112,7 @@
   --------------------------------------------------------------*/
   function onePageNavigation() {
     // Click To Go Top
-    $('.st-smooth-move').on('click', function () {
+    $('.smooth-move').on('click', function () {
       var thisAttr = $(this).attr('href');
       if ($(thisAttr).length) {
         var scrollPoint = $(thisAttr).offset().top - 10;
@@ -127,7 +127,7 @@
     var topLimit = 300,
       ultimateOffset = 200;
 
-    $('.st-onepage-nav').each(function () {
+    $('.onepage-nav').each(function () {
       var $this = $(this),
         $parent = $this.parent(),
         current = null,
@@ -178,9 +178,9 @@
     6. Progress Bar
   --------------------------------------------------------------*/
   function progressBarInit() {
-    $('.st-progressbar').each(function () {
+    $('.progressbar').each(function () {
       var progressPercentage = $(this).data('progress') + "%";
-      $(this).find('.st-progressbar-in').css('width', progressPercentage);
+      $(this).find('.progressbar-in').css('width', progressPercentage);
     });
   }
 
@@ -191,7 +191,7 @@
   // Contact Form
   function formValidation() {
     if ($.exists('#contact-form #submit')) {
-      $('#st-alert').hide();
+      $('#alert').hide();
       $('#contact-form #submit').on('click', function () {
         var name = $('#name').val();
         var subject = $('#subject').val();
@@ -201,7 +201,7 @@
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
         if (!regex.test(email)) {
-          $('#st-alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>');
+          $('#alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> Please Enter Valid Email.</div>');
           return false;
         }
 
@@ -228,14 +228,14 @@
               $('#email').val('');
               $('#msg').val('');
 
-              $('#st-alert').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
+              $('#alert').fadeIn().html('<div class="alert alert-success"><strong>Success!</strong> Email has been sent successfully.</div>');
               setTimeout(function () {
-                $('#st-alert').fadeOut('slow');
+                $('#alert').fadeOut('slow');
               }, 4000);
             }
           });
         } else {
-          $('#st-alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
+          $('#alert').fadeIn().html('<div class="alert alert-danger"><strong>Warning!</strong> All fields are required.</div>');
         }
         return false;
       });
@@ -247,9 +247,9 @@
     8. Light Gallery
   --------------------------------------------------------------*/
   function lightGallery() {
-    $('.st-lightgallery').each(function () {
+    $('.lightgallery').each(function () {
       $(this).lightGallery({
-        selector: '.st-lightbox-item',
+        selector: '.lightbox-item',
         subHtmlSelectorRelative: false,
         thumbnail: false,
         mousewheel: true
@@ -261,7 +261,7 @@
     9. Social Button Hover
   --------------------------------------------------------------*/
   function socialBtnHover() {
-    $(".st-social-btn").hover(
+    $(".social-btn").hover(
       function () {
         $(this).addClass("active").siblings().removeClass('active');
       }
@@ -272,7 +272,7 @@
     10. Slick Slider
   --------------------------------------------------------------*/ 
   function slickInit() {
-    $('.st-slider').each(function () {
+    $('.slider').each(function () {
       // Slick Variable
       var $ts = $(this).find('.slick-container');
       var $slickActive = $(this).find('.slick-wrapper');
@@ -474,9 +474,9 @@
     12. Ripple
   --------------------------------------------------------------*/
   function rippleInit() {
-    if ($.exists('.st-ripple-version')) {
-      $('.st-ripple-version').each(function () {
-        $('.st-ripple-version').ripples({
+    if ($.exists('.ripple-version')) {
+      $('.ripple-version').each(function () {
+        $('.ripple-version').ripples({
           resolution: 512,
           dropRadius: 20,
           perturbance: 0.04,
@@ -489,7 +489,7 @@
     13. Parallax Effect
   --------------------------------------------------------------*/
   function parallaxEffect() {
-    $('.st-parallax').each(function() {
+    $('.parallax').each(function() {
       var windowScroll = $(document).scrollTop(),
         windowHeight = $(window).height(),
         barOffset = $(this).offset().top,
@@ -505,8 +505,8 @@
         var mediumEffectPixel = ((calculadedHeight / 20));
         var miniEffectPixel = ((calculadedHeight / 10));
 
-        $(this).find('.st-to-left').css('transform', `translateX(-${miniEffectPixel}px)`);
-        $(this).find('.st-to-right').css('transform', `translateX(${miniEffectPixel}px)`);
+        $(this).find('.to-left').css('transform', `translateX(-${miniEffectPixel}px)`);
+        $(this).find('.to-right').css('transform', `translateX(${miniEffectPixel}px)`);
         $(this).css('background-position', `center -${largeEffectPixel}px`);
       }
     });

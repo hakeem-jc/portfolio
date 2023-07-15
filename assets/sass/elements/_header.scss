@@ -2,62 +2,62 @@
 5. Header
 ----------------------------------------------------------------*/
 
-.st-site-header.st-style1 {
+.site-header.style1 {
   background-color: rgba($dark-color2, 0.9);
   box-shadow: 0 10px 10px -10px rgba($dark-color2, 0.1);
   transition: all 0.4s ease;
 
-  .st-main-header-in {
+  .main-header-in {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 80px;
   }
-  &.st-transparent-header {
+  &.transparent-header {
     background-color: transparent;
     box-shadow: none;
   }
 
-  &.st-sticky-active {
+  &.sticky-active {
     background-color: $dark-color2;
     box-shadow: 0 10px 10px -10px rgba($dark-color2, 0.1);
   }
 }
 
 @media screen and (max-width: 991px) {
-  .st-main-header .container {
+  .main-header .container {
     max-width: 100%;
   }
 
-  .st-site-header.st-style1 {
+  .site-header.style1 {
     background-color: $dark-color2;
   }
 }
 
 // ======== Main Menu Style ========
-.st-nav ul {
+.nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.st-main-header {
+.main-header {
   position: relative;
 }
 
 @media screen and (min-width: 992px) {
-  .st-nav {
+  .nav {
     display: flex;
 
-    .st-nav-list {
+    .nav-list {
       display: flex !important;
       flex-wrap: wrap;
 
       > li {
         margin-right: 40px;
 
-        &:last-child {
+        &:lachild {
           margin-right: 45px;
         }
 
@@ -67,7 +67,7 @@
           display: inline-block;
           color: $base-color3;
           text-transform: uppercase;
-          font-family: 'Roboto', sans-serif;
+          font-family: "Roboto", sans-serif;
           font-weight: 500;
 
           &.active {
@@ -84,7 +84,7 @@
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 11px;
         width: 1px;
@@ -104,14 +104,14 @@
     }
   }
 
-  .st-munu-toggle,
-  .st-munu-dropdown-toggle {
+  .munu-toggle,
+  .munu-dropdown-toggle {
     display: none;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .st-munu-dropdown-toggle {
+  .munu-dropdown-toggle {
     position: absolute;
     height: 30px;
     width: 30px;
@@ -120,7 +120,7 @@
 
     &:before,
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 50%;
@@ -143,8 +143,8 @@
     }
   }
 
-  .st-nav {
-    .st-nav-list {
+  .nav {
+    .nav-list {
       position: absolute;
       width: 100vw;
       left: 0;
@@ -178,7 +178,7 @@
   }
 
   /*Mobile Menu Button*/
-  .st-munu-toggle {
+  .munu-toggle {
     position: relative;
     display: inline-block;
     width: 28px;
@@ -203,7 +203,7 @@
       transition-delay: 0.2s;
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         margin-top: -8px;
         transition-property: margin, transform;
@@ -212,7 +212,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         margin-top: 8px;
         transition-property: margin, transform;
@@ -222,7 +222,7 @@
     }
   }
 
-  .st-toggle-active {
+  .toggle-active {
     span {
       background-color: rgba(0, 0, 0, 0);
       transition-delay: 0.2s;
@@ -243,7 +243,7 @@
 }
 
 // ======== End Main Menu Style ========
-.st-sticky-header {
+.sticky-header {
   position: fixed;
   z-index: 200;
   width: 100%;
@@ -251,8 +251,8 @@
   left: 0;
 }
 
-.st-site-header.st-style2 {
-  .st-header-author {
+.site-header.style2 {
+  .header-author {
     height: 190px;
     width: 190px;
     border-radius: 50%;
@@ -269,17 +269,17 @@
 }
 
 @media screen and (min-width: 991px) {
-  .st-site-header.st-style2 {
+  .site-header.style2 {
     width: 300px;
     background: $dark-color2;
     height: 100vh;
     border-right: 1px solid $dark-color4;
     overflow: auto;
 
-    .st-nav {
+    .nav {
       flex-direction: column;
 
-      .st-nav-list {
+      .nav-list {
         flex-direction: column;
 
         > li {
@@ -292,12 +292,12 @@
       }
     }
 
-    .st-main-header {
+    .main-header {
       position: relative;
       padding: 40px 25px 80px;
 
       &:after {
-        content: '';
+        content: "";
         position: fixed;
         height: 80px;
         width: 299px;
@@ -307,7 +307,7 @@
       }
     }
 
-    .st-social-btn.st-style1 {
+    .social-btn.style1 {
       position: fixed;
       bottom: 40px;
       left: 40px;
@@ -317,7 +317,7 @@
         margin-right: 20px;
         font-size: 18px;
 
-        &:last-child {
+        &:lachild {
           margin-right: 0;
         }
 
@@ -329,21 +329,21 @@
       }
     }
 
-    .st-main-header-left {
+    .main-header-left {
       margin-bottom: 24px;
     }
 
-    .st-btn.st-style1 {
+    .btn.style1 {
       margin-top: 20px;
       font-size: 14px;
       padding: 0.6em 1.3em;
     }
 
-    .st-hero-btn {
+    .hero-btn {
       margin-top: 22px;
     }
 
-    .st-main-header-left {
+    .main-header-left {
       margin-left: -40px;
       margin-right: -40px;
       border-bottom: 1px solid #101624;
@@ -351,10 +351,10 @@
     }
   }
 
-  .st-get-sidebar {
+  .get-sidebar {
     padding-left: 300px;
 
-    .st-sticky-footer {
+    .sticky-footer {
       left: 300px;
       max-width: calc(100% - 300px);
     }
@@ -362,21 +362,21 @@
 }
 
 @media screen and (max-width: 991px) {
-  .st-site-header .st-btn,
-  .st-site-header.st-style2 .st-opening-hr,
-  .st-site-header.st-style2 .st-social-btn.st-style1 {
+  .site-header .btn,
+  .site-header.style2 .opening-hr,
+  .site-header.style2 .social-btn.style1 {
     display: none !important;
   }
 
-  .st-site-header.st-style2 {
+  .site-header.style2 {
     background-color: $dark-color2;
     border-bottom: 1px solid #101624;
 
-    .st-nav {
+    .nav {
       display: flex;
     }
 
-    .st-main-header-in {
+    .main-header-in {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -384,7 +384,7 @@
     }
   }
 
-  .st-site-header.st-style2 .st-header-author {
+  .site-header.style2 .header-author {
     height: 50px;
     width: 50px;
     border: 2px solid rgba(255, 255, 255, 0.1);
