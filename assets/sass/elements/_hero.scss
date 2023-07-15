@@ -2,7 +2,7 @@
 8. Slider
 -
 ---------------------------------------------------------------*/
-.st-hero-wrap {
+.hero-wrap {
   position: relative;
   height: 850px;
   background-color: #070d1b;
@@ -13,7 +13,7 @@
     object-fit: cover;
   }
 
-  .st-hero-img {
+  .hero-img {
     position: absolute;
     right: 4%;
     top: 0;
@@ -29,7 +29,7 @@
   justify-content: center;
 }
 
-.st-hero.st-style1 {
+.hero.style1 {
   height: 710px;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@
   overflow: hidden;
   z-index: 11;
 
-  .st-hero-text {
+  .hero-text {
     h1 {
       font-size: 120px;
       margin-bottom: 24px;
@@ -65,7 +65,7 @@
   }
 }
 
-.st-social-group {
+.social-group {
   background-color: $dark-color4;
   border: 1px solid $base-color4;
   border-right: 0;
@@ -80,7 +80,7 @@
   right: 100%;
 }
 
-.st-hero.st-style2 {
+.hero.style2 {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -101,7 +101,7 @@
     margin-bottom: 20px;
 
     span {
-      color: #4E9FE5;
+      color: #4e9fe5;
     }
   }
 
@@ -111,7 +111,7 @@
     line-height: 1.6em;
     margin-bottom: 22px;
   }
-  .st-author {
+  .author {
     height: 190px;
     width: 190px;
     border-radius: 50%;
@@ -125,7 +125,7 @@
       object-fit: cover;
     }
   }
-  .st-hero-shape {
+  .hero-shape {
     width: 100%;
     fill: #0a101e;
     position: absolute;
@@ -147,11 +147,11 @@ canvas {
   left: 0;
 }
 
-.st-hero-social-links {
+.hero-social-links {
   display: flex;
   justify-content: center;
 
-  .st-social-btn {
+  .social-btn {
     height: 44px;
     width: 44px;
     border-radius: 50%;
@@ -336,46 +336,46 @@ canvas {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
   border-radius: 50%;
   box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-  content: '';
+  content: "";
   height: 180px;
   left: 10px;
   position: absolute;
   width: 180px;
 }
 
-.st-to-right {
+.to-right {
   transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 991px) {
-  .st-hero-wrap {
+  .hero-wrap {
     height: initial;
 
-    .st-hero-img {
+    .hero-img {
       display: none;
     }
   }
 }
 
 @media screen and (max-width: 767px) {
-  .st-hero.st-style2 h1 {
+  .hero.style2 h1 {
     font-size: 40px;
   }
 
-  .st-hero.st-style2 p {
+  .hero.style2 p {
     font-size: 16px;
   }
 
-  .st-hero.st-style2 p br {
+  .hero.style2 p br {
     display: none;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .st-hero.st-style1 {
+  .hero.style1 {
     height: 580px;
 
-    .st-hero-text h1 {
+    .hero-text h1 {
       font-size: 90px;
     }
   }

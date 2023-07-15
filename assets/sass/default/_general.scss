@@ -1,56 +1,56 @@
 /*--------------------------------------------------------------
 3. General
 ----------------------------------------------------------------*/
-.st-mp0 {
+.mp0 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.st-flex-center {
+.flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.st-zoom {
+.zoom {
   position: relative;
   overflow: hidden;
 
-  .st-zoom-in {
+  .zoom-in {
     transition: all 0.4s ease-in-out;
   }
 
   &:hover {
-    .st-zoom-in {
-      transform: scale(1.07)
+    .zoom-in {
+      transform: scale(1.07);
     }
   }
 }
 
-.st-vertical-middle {
+.vertical-middle {
   display: flex;
   align-items: center;
   height: 100%;
 
-  .st-vertical-middle-in {
+  .vertical-middle-in {
     width: 100%;
   }
 }
 
-.st-bg {
+.bg {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
 
-.st-content {
+.content {
   position: relative;
   z-index: 10;
   overflow-x: hidden;
 }
 
-.st-sticky-footer {
+.sticky-footer {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -58,19 +58,19 @@
   overflow: hidden;
 }
 
-.st-dark-bg {
+.dark-bg {
   background-color: $dark-color2;
 }
 
-.st-gray-bg {
+.gray-bg {
   background-color: #b8b8b8;
 }
 
-.st-gray-overlay {
+.gray-overlay {
   position: relative;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -91,18 +91,16 @@ hr {
   border-color: #000000;
 }
 
-.st-fixed-bg {
+.fixed-bg {
   background-attachment: fixed;
 }
 
-
 @media screen and (max-width: 991px) {
-  .st-content {
+  .content {
     margin: 0 !important;
   }
 
-  .st-vertical-middle {
+  .vertical-middle {
     display: block;
   }
-
 }

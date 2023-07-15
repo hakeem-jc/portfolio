@@ -58,7 +58,7 @@
 .comment-author .nm a:hover,
 .comment-author .nm:hover,
 .comment-metadata a:hover {
-  color: #4E9FE5;
+  color: #4e9fe5;
 }
 
 .comment-metadata a {
@@ -81,7 +81,7 @@
 
 .comment-reply-link {
   font-size: 14px;
-  color: #4E9FE5;
+  color: #4e9fe5;
   position: relative;
 }
 
@@ -92,7 +92,7 @@
 
 .comment-reply-link:before {
   content: "\f112";
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   margin-right: 4px;
 }
 
@@ -150,46 +150,45 @@
 }
 
 .comment-form {
-
   textarea,
   input {
-      border: 1px solid $base-color4;
-      padding: 8px 15px;
-      width: 100%;
-      background-color: transparent;
-      display: block;
-      margin-bottom: 20px;
-      transition: all 0.3s ease;
-      border-radius: 7px;
-      color: #fff;
+    border: 1px solid $base-color4;
+    padding: 8px 15px;
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    border-radius: 7px;
+    color: #fff;
 
-      &:focus {
-          outline: none;
-          border-color: #4E9FE5;
-      }
+    &:focus {
+      outline: none;
+      border-color: #4e9fe5;
+    }
   }
 }
 
-.post-navigation {
+.ponavigation {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.post-navigation>div {
+.ponavigation > div {
   display: inline-block;
 }
 
 .nav-previous a:before {
   content: "\f100";
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   margin-right: 4px;
 }
 
 .nav-next a:after {
   content: "\f101";
-  font-family: 'FontAwesome';
+  font-family: "FontAwesome";
   margin-left: 4px;
 }
 
