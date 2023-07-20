@@ -557,7 +557,6 @@ hr {
     font-size: 15px;
     display: inline-block;
     color: #fdfeff;
-    text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
   }
@@ -740,7 +739,7 @@ hr {
     margin-right: 0;
   }
   .site-header.style2 .nav .nav-list > li > a {
-    padding: 10px 0;
+    padding: 5px 0;
   }
   .site-header.style2 .main-header {
     position: relative;
@@ -2511,7 +2510,7 @@ canvas {
   border-right: 0;
   border-radius: 50px;
   height: 80px;
-  width: 448px;
+  padding: 0 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2519,6 +2518,7 @@ canvas {
 
 .social-link {
   display: flex;
+  gap: 1rem;
 }
 
 .social-link .social-btn {
