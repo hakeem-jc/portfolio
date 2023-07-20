@@ -1287,6 +1287,7 @@ canvas {
 ----------------------------------------------------------------*/
 .about-img {
   min-height: 550px;
+  border-radius: 20px;
 }
 
 .about-img-wrap {
