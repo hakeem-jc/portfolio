@@ -1287,6 +1287,7 @@ canvas {
 ----------------------------------------------------------------*/
 .about-img {
   min-height: 550px;
+  border-radius: 20px;
 }
 
 .about-img-wrap {
@@ -1669,7 +1670,7 @@ canvas {
 }
 .slider.style1 .slick-arrow,
 .slider.style2 .slick-arrow {
-  box-shadow: 0px 5px 10px 0px rgba(106, 106, 106, 0.15);
+  box-shadow: 0px 5px 10px 0px #4E9FE5;
   position: absolute;
   height: 50px;
   width: 50px;
@@ -2518,7 +2519,6 @@ canvas {
 
 .social-link {
   display: flex;
-  gap: 1rem;
 }
 
 .social-link .social-btn {
