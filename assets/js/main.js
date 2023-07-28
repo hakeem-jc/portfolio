@@ -45,7 +45,6 @@
     stickyHeader();
     onePageNavigation();
     mainMenu();
-    lightGallery();
     socialBtnHover();
     slickInit();
     particles();
@@ -246,16 +245,7 @@
   /*--------------------------------------------------------------
     8. Light Gallery
   --------------------------------------------------------------*/
-  function lightGallery() {
-    $('.lightgallery').each(function () {
-      $(this).lightGallery({
-        selector: '.lightbox-item',
-        subHtmlSelectorRelative: false,
-        thumbnail: false,
-        mousewheel: true
-      });
-    });
-  }
+  // Removed
 
   /*--------------------------------------------------------------
     9. Social Button Hover
