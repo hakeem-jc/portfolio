@@ -273,7 +273,7 @@
     background: $dark-color2;
     height: 100vh;
     border-right: 1px solid $dark-color4;
-    overflow: auto;
+    overflow: hidden;
 
     .nav {
       flex-direction: column;
@@ -338,9 +338,6 @@
       padding: 0.6em 1.3em;
     }
 
-    .hero-btn {
-      margin-top: 22px;
-    }
 
     .main-header-left {
       margin-left: -40px;
