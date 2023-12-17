@@ -119,8 +119,6 @@ img {
 
 a {
   color: inherit;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -719,7 +717,8 @@ hr {
   border-radius: inherit;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 991px) {
@@ -830,7 +829,8 @@ hr {
 .hero-wrap img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero-wrap .hero-img {
   position: absolute;
@@ -933,7 +933,8 @@ hr {
   border-radius: inherit;
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .hero.style2 .hero-shape {
   width: 100%;
@@ -1085,11 +1086,6 @@ canvas {
 }
 
 .bubble:after {
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(70%, rgba(255, 255, 255, 0)));
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
-  background: -o-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
-  background: -ms-radial-gradient(center, ellipse cover, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
   background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80ffffff", endColorstr="#00ffffff", GradientType=1);
   border-radius: 50%;
@@ -1539,6 +1535,7 @@ canvas {
 }
 .portfolio .portfolio-img img {
   width: 100%;
+  border-radius: 12px;
 }
 
 .portfolio-item-hover {
@@ -1586,6 +1583,11 @@ canvas {
 
 .portfolio-btn {
   margin-top: 20px;
+}
+
+.portfolio_card {
+  display: flex;
+  flex-direction: column;
 }
 
 /*--------------------------------------------------------------
@@ -1808,7 +1810,8 @@ canvas {
 .testimonial.style1 .testimonial-img img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .testimonial.style1 .testimonial-name {
   font-size: 20px;
@@ -2430,6 +2433,9 @@ canvas {
   border-radius: 7px;
   transition: all 0.4s ease;
 }
+.form-field input::-moz-placeholder, .form-field textarea::-moz-placeholder {
+  color: #3f4551;
+}
 .form-field input::placeholder,
 .form-field textarea::placeholder {
   color: #3f4551;
@@ -2508,11 +2514,7 @@ canvas {
   border-radius: 50px;
   height: 80px;
   padding: 0 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-content: center;
 }
