@@ -72,27 +72,19 @@ export const projects = [
   {
     id: 1,
     title: "GPT Light",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    des: "Get all your questions answered seriously or whimsically",
+    img: "/gpt-light.png",
+    iconLists: ["/next.svg", "/re.svg", "/ts.svg"],
     link: "https://gpt-light.vercel.app/",
   },
   {
     id: 2,
     title: "Xoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Xoom. Seamlessly connect with colleagues and friends.",
+    des: "Simplify your video conferencing experience with Xoom",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://xoom-video-chat.vercel.app/",
-  },
-  // {
-  //   id: 3,
-  //   title: "Nextflix",
-  //   des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-  //   img: "/p3.svg",
-  //   iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-  //   link: "https://nextflix-gules.vercel.app/auth",
-  // },
+  }
 ];
 
 export const testimonials = [
