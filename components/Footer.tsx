@@ -4,6 +4,10 @@ import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 
 const Footer = () => {
+  const openLink = () => {
+    window.open("mailto:hakeem_clarke14@yahoo.com", "_blank");
+  }
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
@@ -20,16 +24,14 @@ const Footer = () => {
           Ready to hire a <span className="text-purple">digital magician?</span>
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how we can build the future of the web together
+          Send me an email today and let&apos;s discuss how we can build the future of the web together
         </p>
-        {/* TODO - Add email to constants */}
-        <a href="hakeem_clarke14@yahoo.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
+        <MagicButton
+          title="Let's get in touch"
+          icon={<FaLocationArrow />}
+          position="right"
+          handleClick={()=>openLink()}
+        />
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
