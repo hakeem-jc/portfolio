@@ -1,10 +1,9 @@
 import { FaFileArrowDown } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
-  const downloadFile = (fileName:string, fileUrl:string) => {
+  const downloadFile = (fileName: string, fileUrl: string) => {
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = fileName;
@@ -42,10 +41,10 @@ const Hero = () => {
             Next.js . React . TypeScript . UI/UX
           </p>
 
-          <TextGenerateEffect
-            words="Creating Intuitive UI's and High Performance API's"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+          <p className="text-center max-w-3xl mb-8 mt-8 text-4xl font-extrabold tracking-wide leading-snug md:text-5xl xl:text-6xl text-white ">
+            Creating <span className="text-purple">Intuitive UI&apos;s </span>
+            and <span className="text-purple">High Performance API&apos;s</span>
+          </p>
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi! I&apos;m Hakeem, a Next.js Developer based in Jamaica.
