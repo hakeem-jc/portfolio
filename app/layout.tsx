@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   creator: "Hakeem Clarke",
   robots: "index, follow",
   icons: "https://www.hakeemclarke.com/favicon.jpg",
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
