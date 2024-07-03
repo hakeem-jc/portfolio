@@ -7,8 +7,13 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hakeem's Portfolio",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "Hakeem Clarke - Senior Software Developer",
+  description: "Next.js / JavaScript / Full Stack Developer Portfolio",
+  keywords:
+    "Next.js, React, JavaScript, Typescript, Software Development, Developer Portfolio",
+  creator: "Hakeem Clarke",
+  robots: "index, follow",
+  icons: "https://www.hakeemclarke.com/favicon.jpg",
 };
 
 export default function RootLayout({
@@ -19,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.jpg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
