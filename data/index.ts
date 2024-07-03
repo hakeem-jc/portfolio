@@ -74,7 +74,7 @@ export const projects = [
     title: "GPT Light",
     des: "Get all your questions answered seriously or whimsically",
     img: "/gpt-light.png",
-    iconLists: ["/next.svg", "/re.svg", "/ts.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/ts.svg", "/oa.svg"],
     link: "https://gpt-light.vercel.app/",
   },
   {
