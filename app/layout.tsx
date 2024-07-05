@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Next.js, React, JavaScript, Typescript, Software Development, Developer Portfolio",
   creator: "Hakeem Clarke",
   robots: "index, follow",
-  icons: "https://www.hakeemclarke.com/favicon.jpg",
+  icons: "https://www.hakeemclarke.com/favicon.ico",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.jpg" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

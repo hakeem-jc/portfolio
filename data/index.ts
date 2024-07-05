@@ -4,6 +4,33 @@ export const navItems = [
   { name: "Dribbble", link: "https://dribbble.com/HakeemC" },
 ];
 
+
+export const skills = [
+  "React",
+  "Next.js",
+  "Redux",
+  "TypeScript",
+  "JavaScript (ES5 & ES6)",
+  "HTML",
+  "CSS",
+  "Sass",
+  "Node.js",
+  "Cypress",
+  "Jest",
+  "React Testing Library",
+  "Git",
+  "GitHub Actions",
+  "GitLab CI/CD",
+  "Jira",
+  "Octopus CI/CD",
+  "MongoDB",
+  "SQL",
+  "Postgres",
+  "AWS",
+  "Digital Ocean",
+  "Kubernetes",
+];
+
 export const gridItems = [
   {
     id: 1,
@@ -91,10 +118,10 @@ export const projects = [
 export const workExperience = [
   {
     id: 1,
-    title: "Junior Software Developer",
-    desc: "Maintained a legacy banking application in JS and Java and built a modernized version in React and Spring Boot",
+    title: "Senior Software Developer",
+    desc: "Designed and built various internal web apps for businesses, from initial concept to production",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/exp4.svg",
   },
   {
     id: 2,
@@ -105,11 +132,11 @@ export const workExperience = [
   },
   {
     id: 3,
-    title: "Senior Software Developer",
-    desc: "Designed and built various internal web apps for businesses, from initial concept to production",
+    title: "Junior Software Developer",
+    desc: "Maintained a legacy banking application in JS and Java and built a modernized version in React and Spring Boot",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  }
+    thumbnail: "/exp1.svg",
+  },
 ];
 
 export const socialMedia = [
