@@ -86,13 +86,11 @@ const Hero = () => {
                 APIs.
               </span>
               <span className="block mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                molestiae placeat saepe, reiciendis harum voluptates! Blanditiis
-                nobis vel quis ab. Molestias voluptatum sint nulla iste.
-                Officia, ratione numquam. Ut, excepturi exercitationem! Ducimus
-                voluptatibus, soluta ipsa maiores voluptate sequi fugiat labore
-                placeat nobis sit totam quas! Quia deleniti impedit perferendis
-                odio!
+                My main focus these days is building applications for clients
+                from start-ups to large Jamaican corporations at work while
+                experimenting with fintech and AI engineering in my free time.
+                Now that you&apos;re all caught up, here&apos;s a a snapshot of
+                my skillset:
               </span>
             </p>
           </div>
