@@ -4,6 +4,33 @@ export const navItems = [
   { name: "Dribbble", link: "https://dribbble.com/HakeemC" },
 ];
 
+
+export const skills = [
+  "React",
+  "Next.js",
+  "Redux",
+  "TypeScript",
+  "JavaScript (ES5 & ES6)",
+  "HTML",
+  "CSS",
+  "Sass",
+  "Node.js",
+  "Cypress",
+  "Jest",
+  "React Testing Library",
+  "Git",
+  "GitHub Actions",
+  "GitLab CI/CD",
+  "Jira",
+  "Octopus CI/CD",
+  "MongoDB",
+  "SQL",
+  "Postgres",
+  "AWS",
+  "Digital Ocean",
+  "Kubernetes",
+];
+
 export const gridItems = [
   {
     id: 1,

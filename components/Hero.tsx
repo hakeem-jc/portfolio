@@ -1,6 +1,7 @@
 import { FaFileArrowDown } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
+import { skills } from "@/data";
 
 const Hero = () => {
   const downloadFile = (fileName: string, fileUrl: string) => {
@@ -77,7 +78,34 @@ const Hero = () => {
               crafting production-grade applications for the banking industry. I
               specialize in designing and building responsive, user-friendly
               front-ends using TypeScript and Next.js / React.
+              <span className="block mt-2">
+                I&apos;ve built and maintained a critical commercial lending
+                platform. I worked closely with international cross-functional
+                agile teams of developers, designers, testers, and product
+                managers where I built reusable React components and Spring Boot
+                APIs.
+              </span>
+              <span className="block mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                molestiae placeat saepe, reiciendis harum voluptates! Blanditiis
+                nobis vel quis ab. Molestias voluptatum sint nulla iste.
+                Officia, ratione numquam. Ut, excepturi exercitationem! Ducimus
+                voluptatibus, soluta ipsa maiores voluptate sequi fugiat labore
+                placeat nobis sit totam quas! Quia deleniti impedit perferendis
+                odio!
+              </span>
             </p>
+          </div>
+
+          <div className="flex gap-4 flex-wrap mt-12">
+            {skills.map((skill) => (
+              <div
+                key={skill}
+                className="p-4 mb-4 text-sm text-blue-800 rounded-3xl bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
+              >
+                <span className="font-medium">{skill}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
