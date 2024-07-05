@@ -74,23 +74,29 @@ const Hero = () => {
               I&apos;m Guessing You Want to Hear More
             </p>
             <p className="text-white-200 md:mt-10 my-5">
-              I&apos;m a Full-Stack Developer with 6+ years of experience
+              I&apos;m a{" "}
+              <span className="font-bold">Full-Stack Developer</span> with{" "}
+              <span className="font-bold">6+</span> years of experience
               crafting production-grade applications for the banking industry. I
               specialize in designing and building responsive, user-friendly
-              front-ends using TypeScript and Next.js / React.
+              front-ends using{" "}
+              <span className="font-bold">
+                TypeScript and Next.js / React.
+              </span>
               <span className="block mt-2">
                 I&apos;ve built and maintained a critical commercial lending
-                platform. I worked closely with international cross-functional
-                agile teams of developers, designers, testers, and product
-                managers where I built reusable React components and Spring Boot
-                APIs.
+                platform, maintained and upgraded a legacy one, modernized the
+                IT infrastructure of a major restaurant chain, and worked
+                closely with multiple international cross-functional agile teams
+                of developers, designers, testers, product managers, and other
+                stakeholders.
               </span>
               <span className="block mt-2">
                 My main focus these days is building applications for clients
                 from start-ups to large Jamaican corporations at work while
                 experimenting with fintech and AI engineering in my free time.
-                Now that you&apos;re all caught up, here&apos;s a a snapshot of
-                my skillset:
+                Now that you&apos;re all caught up, here&apos;s a snapshot of my
+                skillset:
               </span>
             </p>
           </div>
