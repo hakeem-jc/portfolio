@@ -67,6 +67,18 @@ const Hero = () => {
               position="right"
             />
           </div>
+
+          <div className="flex flex-col items-center mt-40">
+            <p className="text-center mb-2 text-sm md:text-lg lg:text-2xl">
+              I&apos;m Guessing You Want to Hear More
+            </p>
+            <p className="text-white-200 md:mt-10 my-5">
+              I&apos;m a Full-Stack Developer with 6+ years of experience
+              crafting production-grade applications for the banking industry. I
+              specialize in designing and building responsive, user-friendly
+              front-ends using TypeScript and Next.js / React.
+            </p>
+          </div>
         </div>
       </div>
     </div>
