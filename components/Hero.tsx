@@ -37,7 +37,7 @@ const Hero = () => {
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="text-center max-w-3xl mb-8 mt-8 text-4xl font-extrabold tracking-wide leading-snug md:text-5xl xl:text-6xl text-purple">
+          <p className="text-center max-w-3xl mb-8 mt-8 text-4xl font-extrabold tracking-wide leading-snug md:text-5xl xl:text-6xl text-sky-500">
             Hakeem Clarke
           </p>
 
@@ -51,7 +51,7 @@ const Hero = () => {
 
           <p className="text-white-200 md:mt-10 my-5 text-center text-lg">
             I build pixel-perfect, attention-grabbing, user-friendly{" "}
-            <span className="text-purple">digital magic</span>
+            <span className="text-sky-500">digital magic</span>
           </p>
 
           <div
@@ -74,15 +74,12 @@ const Hero = () => {
               I&apos;m Guessing You Want to Hear More
             </p>
             <p className="text-white-200 md:mt-10 my-5">
-              I&apos;m a{" "}
-              <span className="font-bold">Full-Stack Developer</span> with{" "}
-              <span className="font-bold">6+</span> years of experience
+              I&apos;m a <span className="font-bold">Full-Stack Developer</span>{" "}
+              with <span className="font-bold">6+</span> years of experience
               crafting production-grade applications for the banking industry. I
               specialize in designing and building responsive, user-friendly
               front-ends using{" "}
-              <span className="font-bold">
-                TypeScript and Next.js / React.
-              </span>
+              <span className="font-bold">TypeScript and Next.js / React.</span>
               <span className="block mt-2">
                 I&apos;ve built and maintained a critical commercial lending
                 platform, maintained and upgraded a legacy one, modernized the
@@ -105,7 +102,7 @@ const Hero = () => {
             {skills.map((skill) => (
               <div
                 key={skill}
-                className="p-4 mb-4 text-sm text-blue-800 rounded-3xl bg-blue-50 dark:bg-gray-800 dark:text-blue-400"
+                className="p-4 mb-4 text-sm rounded-3xl bg-gray-800 text-sky-500"
               >
                 <span className="font-medium">{skill}</span>
               </div>
