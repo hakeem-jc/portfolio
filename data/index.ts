@@ -33,38 +33,22 @@ export const skills = [
     name: "Node.js",
     image: "/skills/node-js.svg",
   },
-  // {
-  //   name: "Cypress",
-  //   image: "/skills/react.svg",
-  // },
   {
     name: "Jest",
     image: "/skills/jest.svg",
   },
-  // {
-  //   name: "React Testing Library",
-  //   image: "/skills/react.svg",
-  // },
-  // {
-  //   name: "Git",
-  //   image: "/skills/react.svg",
-  // },
-  // {
-  //   name: "GitHub Actions",
-  //   image: "/skills/react.svg",
-  // },
-  // {
-  //   name: "GitLab CI/CD",
-  //   image: "/skills/react.svg",
-  // },
-  // {
-  //   name: "Jira",
-  //   image: "/skills/react.svg",
-  // },
-  // {
-  //   name: "Octopus CI/CD",
-  //   image: "/skills/react.svg",
-  // },
+  {
+    name: "React Testing Library",
+    image: "/skills/react-testing-library.svg",
+  },
+  {
+    name: "GitHub Actions",
+    image: "/skills/github-actions.svg",
+  },
+  {
+    name: "Playwright",
+    image: "/skills/playwright.svg",
+  },
   {
     name: "MongoDB",
     image: "/skills/mongodb.svg",
@@ -81,16 +65,8 @@ export const skills = [
     name: "AWS",
     image: "/skills/aws.svg",
   },
-  // {
-  //   name: "Digital Ocean",
-  //   image: "/skills/react.svg",
-  // },
-  // {
-  //   name: "Kubernetes",
-  //   image: "/skills/react.svg",
-  // },
   {
-    name: "Open AI",
+    name: "Open AI API",
     image: "/skills/openai.svg",
   },
   {
