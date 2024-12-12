@@ -4,31 +4,99 @@ export const navItems = [
   { name: "Dribbble", link: "https://dribbble.com/HakeemC" },
 ];
 
-
 export const skills = [
-  "React",
-  "Next.js",
-  "Redux",
-  "TypeScript",
-  "JavaScript (ES5 & ES6)",
-  "HTML",
-  "CSS",
-  "Sass",
-  "Node.js",
-  "Cypress",
-  "Jest",
-  "React Testing Library",
-  "Git",
-  "GitHub Actions",
-  "GitLab CI/CD",
-  "Jira",
-  "Octopus CI/CD",
-  "MongoDB",
-  "SQL",
-  "Postgres",
-  "AWS",
-  "Digital Ocean",
-  "Kubernetes",
+  {
+    name: "React",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  {
+    name: "Next.js",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  // {
+  //   name: "Redux",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  {
+    name: "TypeScript",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  {
+    name: "JavaScript",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  // {
+  //   name: "HTML",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  // {
+  //   name: "CSS",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  // {
+  //   name: "Sass",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  {
+    name: "Node.js",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  // {
+  //   name: "Cypress",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  {
+    name: "Jest",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  // {
+  //   name: "React Testing Library",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  // {
+  //   name: "Git",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  // {
+  //   name: "GitHub Actions",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  // {
+  //   name: "GitLab CI/CD",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  // {
+  //   name: "Jira",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  // {
+  //   name: "Octopus CI/CD",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  {
+    name: "MongoDB",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  {
+    name: "SQL",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  {
+    name: "Postgres",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  {
+    name: "AWS",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
+  // {
+  //   name: "Digital Ocean",
+  //   image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  // },
+  {
+    name: "Kubernetes",
+    image: "https://lemon.io/wp-content/uploads/2024/07/cross-link-react.svg",
+  },
 ];
 
 export const gridItems = [
@@ -111,9 +179,8 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://xoom-video-chat.vercel.app/",
-  }
+  },
 ];
-
 
 export const workExperience = [
   {
