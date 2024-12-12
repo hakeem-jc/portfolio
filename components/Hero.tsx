@@ -100,8 +100,9 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-4 flex-wrap mt-12">
-            {skills.map((skill) => (
+            {skills.map((skill,i) => (
               <Skill 
+                  key={i}
                   name={skill.name}
                   image={skill.image}
                />
