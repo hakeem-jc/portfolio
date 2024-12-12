@@ -2,6 +2,7 @@ import { FaFileArrowDown } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { skills } from "@/data";
+import Skill from './Skill';
 
 const Hero = () => {
   const downloadFile = (fileName: string, fileUrl: string) => {
@@ -99,13 +100,12 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-4 flex-wrap mt-12">
-            {skills.map((skill) => (
-              <div
-                key={skill}
-                className="p-4 mb-4 text-sm rounded-3xl bg-gray-800 text-sky-500"
-              >
-                <span className="font-medium">{skill}</span>
-              </div>
+            {skills.map((skill,i) => (
+              <Skill 
+                  key={i}
+                  name={skill.name}
+                  image={skill.image}
+               />
             ))}
           </div>
         </div>

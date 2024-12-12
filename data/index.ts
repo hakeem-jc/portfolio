@@ -4,31 +4,79 @@ export const navItems = [
   { name: "Dribbble", link: "https://dribbble.com/HakeemC" },
 ];
 
-
 export const skills = [
-  "React",
-  "Next.js",
-  "Redux",
-  "TypeScript",
-  "JavaScript (ES5 & ES6)",
-  "HTML",
-  "CSS",
-  "Sass",
-  "Node.js",
-  "Cypress",
-  "Jest",
-  "React Testing Library",
-  "Git",
-  "GitHub Actions",
-  "GitLab CI/CD",
-  "Jira",
-  "Octopus CI/CD",
-  "MongoDB",
-  "SQL",
-  "Postgres",
-  "AWS",
-  "Digital Ocean",
-  "Kubernetes",
+  {
+    name: "React",
+    image: "/skills/react.svg",
+  },
+  {
+    name: "Next.js",
+    image: "/skills/next-js.svg",
+  },
+  {
+    name: "TypeScript",
+    image: "/skills/typescript.svg",
+  },
+  {
+    name: "JavaScript",
+    image: "/skills/javascript.svg",
+  },
+  {
+    name: "Docker",
+    image: "/skills/docker.svg",
+  },
+  {
+    name: "Express.js",
+    image: "/skills/express-js.svg",
+  },
+  {
+    name: "Node.js",
+    image: "/skills/node-js.svg",
+  },
+  {
+    name: "Jest",
+    image: "/skills/jest.svg",
+  },
+  {
+    name: "React Testing Library",
+    image: "/skills/react-testing-library.svg",
+  },
+  {
+    name: "GitHub Actions",
+    image: "/skills/github-actions.svg",
+  },
+  {
+    name: "Playwright",
+    image: "/skills/playwright.svg",
+  },
+  {
+    name: "MongoDB",
+    image: "/skills/mongodb.svg",
+  },
+  {
+    name: "SQL",
+    image: "/skills/sql.svg",
+  },
+  {
+    name: "Postgres",
+    image: "/skills/postgresql.svg",
+  },
+  {
+    name: "AWS",
+    image: "/skills/aws.svg",
+  },
+  {
+    name: "Open AI API",
+    image: "/skills/openai.svg",
+  },
+  {
+    name: "Python",
+    image: "/skills/python.svg",
+  },
+  {
+    name: "Rest API",
+    image: "/skills/rest-api.svg",
+  },
 ];
 
 export const gridItems = [
@@ -111,9 +159,8 @@ export const projects = [
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://xoom-video-chat.vercel.app/",
-  }
+  },
 ];
-
 
 export const workExperience = [
   {
