@@ -160,6 +160,14 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://xoom-video-chat.vercel.app/",
   },
+  {
+    id: 3,
+    title: "Calcula - Loan Calculator",
+    des: "Calculate your loan payments with ease",
+    img: "/calcula.png",
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg"],
+    link: "https://loan-calculator-tan.vercel.app/",
+  },
 ];
 
 export const workExperience = [
