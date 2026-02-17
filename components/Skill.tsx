@@ -15,7 +15,7 @@ const Skill: FC<SkillProps> = ({ name, image }) => {
           alt={`${name} logo`}
           width={56}
           height={56}
-          className="mb-3 rounded-full shadow-lg"
+          className="mb-3 shadow-lg"
           loading="lazy"
           sizes="56px"
         />
