@@ -61,7 +61,7 @@ export const FloatingNav = ({
         )}
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
-          backgroundColor: "rgba(33, 33, 33, 0.75)",
+          backgroundColor: "var(--foreground)",
           borderRadius: "12px",
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
@@ -76,7 +76,7 @@ export const FloatingNav = ({
             target="_blank"
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            <span className=" text-sm cursor-pointer!">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>
