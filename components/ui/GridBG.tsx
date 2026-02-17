@@ -10,6 +10,7 @@ const GridBG = () => {
           className="w-full h-full opacity-50 "
           width={2000}
           height={2000}
+          priority
         />
       </div>
     </div>

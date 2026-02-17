@@ -2,11 +2,10 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Hero from "@/components/Hero";
 import { navItems } from "@/data";
 import dynamic from "next/dynamic";
+import Grid from "@/components/ui/grid/Grid";
 
 const GridBG = dynamic(() => import("@/components/ui/GridBG"));
-const Grid = dynamic(() => import("@/components/ui/grid/Grid"));
 const Footer = dynamic(() => import("@/components/Footer"));
-
 
 export default function Home() {
   return (
