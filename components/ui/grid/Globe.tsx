@@ -2,13 +2,7 @@
 import { useEffect, useRef, useState, useMemo } from "react";
 import { Color, Scene, Fog, PerspectiveCamera, Vector3 } from "three";
 import ThreeGlobe from "three-globe";
-import {
-  useThree,
-  Canvas,
-  extend,
-  ReactThreeFiber,
-  ThreeElement,
-} from "@react-three/fiber";
+import { useThree, Canvas, extend, ThreeElement } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import countries from "@/data/globe.json";
 declare module "@react-three/fiber" {
@@ -34,29 +28,29 @@ type Position = {
 };
 
 export type GlobeConfig = {
-  pointSize?: number;
-  globeColor?: string;
-  showAtmosphere?: boolean;
-  atmosphereColor?: string;
-  atmosphereAltitude?: number;
-  emissive?: string;
-  emissiveIntensity?: number;
-  shininess?: number;
-  polygonColor?: string;
-  ambientLight?: string;
-  directionalLeftLight?: string;
-  directionalTopLight?: string;
-  pointLight?: string;
-  arcTime?: number;
-  arcLength?: number;
-  rings?: number;
-  maxRings?: number;
-  initialPosition?: {
+  pointSize: number;
+  globeColor: string;
+  showAtmosphere: boolean;
+  atmosphereColor: string;
+  atmosphereAltitude: number;
+  emissive: string;
+  emissiveIntensity: number;
+  shininess: number;
+  polygonColor: string;
+  ambientLight: string;
+  directionalLeftLight: string;
+  directionalTopLight: string;
+  pointLight: string;
+  arcTime: number;
+  arcLength: number;
+  rings: number;
+  maxRings: number;
+  initialPosition: {
     lat: number;
     lng: number;
   };
-  autoRotate?: boolean;
-  autoRotateSpeed?: number;
+  autoRotate: boolean;
+  autoRotateSpeed: number;
 };
 
 interface WorldProps {
@@ -80,22 +74,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
   const globeRef = useRef<ThreeGlobe | null>(null);
 
-  const defaultProps = {
-    pointSize: 1,
-    atmosphereColor: "#ffffff",
-    showAtmosphere: true,
-    atmosphereAltitude: 0.1,
-    polygonColor: "rgba(255,255,255,0.7)",
-    globeColor: "#1d072e",
-    emissive: "#000000",
-    emissiveIntensity: 0.1,
-    shininess: 0.9,
-    arcTime: 2000,
-    arcLength: 0.9,
-    rings: 1,
-    maxRings: 3,
-    ...globeConfig,
-  };
+  const defaultProps = { ...globeConfig };
 
   useEffect(() => {
     if (globeRef.current) {
@@ -193,7 +172,7 @@ export function Globe({ globeConfig, data }: WorldProps) {
 
     globeRef.current
       .pointsData(globeData)
-      .pointColor((e) => (e as { color: string }).color)
+      .pointColor((e: any) => e.color)
       .pointsMerge(true)
       .pointAltitude(0.0)
       .pointRadius(2);
@@ -256,7 +235,6 @@ export function World(props: WorldProps) {
     return s;
   }, []);
 
-  scene.fog = new Fog(0xffffff, 400, 2000);
   return (
     <Canvas scene={scene} camera={new PerspectiveCamera(50, aspect, 180, 1800)}>
       <WebGLRendererConfig />
