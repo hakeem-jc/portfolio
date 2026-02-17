@@ -2,15 +2,16 @@
 import { FaFileArrowDown } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { skills } from "@/data";
-import Skill from "./Skill";
+import { useInView } from "react-intersection-observer";
+import dynamic from "next/dynamic";
+
+const Skill = dynamic(() => import("./Skill"), { ssr: false });
 
 const Hero = () => {
-  const downloadFile = (fileName: string, fileUrl: string) => {
-    const link = document.createElement("a");
-    link.href = fileUrl;
-    link.download = fileName;
-    link.click();
-  };
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    rootMargin: "200px",
+  });
 
   return (
     <div className="pb-20 pt-36">
@@ -40,20 +41,13 @@ const Hero = () => {
             <span className="text-purple-400">digital magic</span>
           </p>
 
-          <div
-            onClick={() =>
-              downloadFile(
-                "Resume - Hakeem Clarke.pdf",
-                "/Resume - Hakeem Clarke.pdf",
-              )
-            }
-          >
+          <a href="/Resume - Hakeem Clarke.pdf" download>
             <MagicButton
               title="Download my CV"
               icon={<FaFileArrowDown />}
               position="right"
             />
-          </div>
+          </a>
 
           <div className="flex flex-col items-center mt-40 text-gray-200">
             <p className="text-center mb-2 text-sm md:text-lg lg:text-2xl">
@@ -84,10 +78,11 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex gap-4 flex-wrap mt-12">
-            {skills.map((skill, i) => (
-              <Skill key={i} name={skill.name} image={skill.image} />
-            ))}
+          <div ref={ref} className="flex gap-4 flex-wrap mt-12">
+            {inView &&
+              skills.map((skill, i) => (
+                <Skill key={i} name={skill.name} image={skill.image} />
+              ))}
           </div>
         </div>
       </div>
