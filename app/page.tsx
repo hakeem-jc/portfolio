@@ -1,9 +1,12 @@
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Hero from "@/components/Hero";
-import Grid from "@/components/ui/grid/Grid";
 import { navItems } from "@/data";
-import Footer from "@/components/Footer";
-import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const GridBG = dynamic(() => import("@/components/ui/GridBG"));
+const Grid = dynamic(() => import("@/components/ui/grid/Grid"));
+const Footer = dynamic(() => import("@/components/Footer"));
+
 
 export default function Home() {
   return (
@@ -14,17 +17,7 @@ export default function Home() {
         <Grid />
       </div>
 
-      <div className="w-full pt-20 pb-5">
-        <div className="w-full absolute left-0 -bottom-72 min-h-96">
-          <Image
-            src="/bg-grid.svg"
-            alt="grid"
-            className="w-full h-full opacity-50 "
-            width={2000}
-            height={2000}
-          />
-        </div>
-      </div>
+      <GridBG />
       <Footer />
     </main>
   );
