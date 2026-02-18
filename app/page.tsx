@@ -10,12 +10,11 @@ const Footer = dynamic(() => import("@/components/Footer"));
 export default function Home() {
   return (
     <main>
-      <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 bg-[url(/bg.png)] bg-no-repeat">
+      <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 bg-[url(/bg.webp)] bg-no-repeat">
         <FloatingNav navItems={navItems} />
         <Hero />
         {/* <Grid /> */}
       </div>
-
       <GridBG />
       <Footer />
     </main>
