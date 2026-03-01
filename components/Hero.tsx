@@ -14,7 +14,7 @@ const Hero = () => {
   });
 
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-5 pt-36">
       <div
         className="h-screen w-full bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
@@ -78,7 +78,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div ref={ref} className="flex gap-4 flex-wrap mt-12">
+          <div ref={ref} className="flex gap-4 flex-wrap mt-12 justify-center">
             {inView &&
               skills.map((skill, i) => (
                 <Skill key={i} name={skill.name} image={skill.image} />
