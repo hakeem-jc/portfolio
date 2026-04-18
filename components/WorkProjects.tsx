@@ -1,51 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-type CaseStudy = {
-  title: string;
-  description: string;
-  tags: string[];
-};
-
-const caseStudies: CaseStudy[] = [
-  {
-    title: "Legacy Lending System",
-    description:
-      "Maintained a core banking application used by loan officers to process end-to-end loan applications, gaining deep exposure to production fintech systems and legacy architecture.",
-    tags: ["JavaScript", "Java", "FinTech", "Legacy Systems"],
-  },
-  {
-    title: "Modern Lending System",
-    description:
-      "Led frontend development of a rebuilt lending platform using React and TypeScript, delivering faster performance, fewer bugs, and a significantly improved user experience.",
-    tags: ["React", "TypeScript", "Spring Boot", "Frontend Leadership"],
-  },
-  {
-    title: "Company Intranet",
-    description:
-      "Designed and developed a nationwide intranet as a solo engineer using Next.js and TypeScript, improving internal communication and operational efficiency.",
-    tags: ["Next.js", "TypeScript", "Vercel", "Enterprise"],
-  },
-  {
-    title: "IT Automation & Tooling",
-    description:
-      "Engineered PowerShell automation and leveraged low-code tools to streamline Office 365 administration and reduce manual workload across teams.",
-    tags: ["PowerShell", "Automation", "Power Automate", "DevOps"],
-  },
-  {
-    title: "Infrastructure Modernization",
-    description:
-      "Supported IT transformation efforts including software procurement research and system improvements for a large restaurant chain.",
-    tags: ["System Design", "Research", "IT Strategy"],
-  },
-  {
-    title: "Lunch Ordering System",
-    description:
-      "Built an internal ordering platform to streamline meal coordination and improve day-to-day operations within the organization.",
-    tags: ["Next.js", "TypeScript", "Internal Tools"],
-  },
-];
+import { workProjects } from "@/data";
 
 export default function WorkProjects() {
   return (
@@ -62,7 +18,7 @@ export default function WorkProjects() {
 
       {/* Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {caseStudies.map((project, index) => (
+        {workProjects.map((project, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 40 }}
