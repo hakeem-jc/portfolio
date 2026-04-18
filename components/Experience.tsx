@@ -48,14 +48,14 @@ const experiences: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section className="relative z-10 max-w-5xl mx-auto px-8 pt-24">
+    <section className="relative z-10 max-w-5xl mx-auto px-8 pt-24 pb-24">
       {/* Header */}
       <div className="text-center mb-20">
         <h2 className="text-3xl md:text-4xl font-semibold">
           Work Experience
         </h2>
-        <p className="text-white/50 mt-2">
-          Professional timeline and impact
+        <p className="text-white/60 mt-2">
+          A high-level summary of my career, key achievements, and technical contributions
         </p>
       </div>
 

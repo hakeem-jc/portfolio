@@ -56,14 +56,14 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <section className="relative z-10 max-w-6xl mx-auto px-8 pb-8">
+    <section className="relative z-10 max-w-6xl mx-auto px-8">
       {/* Header */}
-      <div className="mb-12">
+      <div className="mb-12 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold">
-          My Portfolio
+          Personal Projects
         </h2>
-        <p className="text-white/50 text-sm mt-2 max-w-xl">
-          Personal projects focused on performance, scalability, and digital excellence
+        <p className="text-white/60 mt-2">
+          Passion projects focused on performance, scalability, and digital excellence
         </p>
       </div>
 

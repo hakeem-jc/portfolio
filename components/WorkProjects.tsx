@@ -29,15 +29,15 @@ const caseStudies: CaseStudy[] = [
   },
 ];
 
-export default function Portfolio() {
+export default function WorkProjects() {
   return (
-    <section className="relative z-10 max-w-6xl mx-auto px-8 py-20">
+    <section className="relative z-10 max-w-6xl mx-auto px-8 pb-24">
       {/* Section Header */}
-      <div className="mb-12">
+      <div className="mb-12 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
           Work Projects
         </h2>
-        <p className="text-white/60 mt-2 max-w-xl">
+        <p className="text-white/60 mt-2">
           Real-world systems I've developed, built for impact
         </p>
       </div>
