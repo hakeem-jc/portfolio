@@ -7,54 +7,52 @@ type Project = {
   subtitle: string;
   description: string;
   tags: string[];
-  image?: string; // optional
+  image?: string;
 };
 
 const projects: Project[] = [
   {
-    title: "Banking App Optimization",
-    subtitle: "Internal Platform",
+    title: "Milk Money",
+    subtitle: "Productivity",
     description:
-      "Improved performance and reduced load times, increasing user satisfaction from 36% to 84%.",
-    tags: ["Next.js", "Performance", "UX"],
+      "A fast, intuitive grocery calculator that helps users track spending, manage quantities, and make better purchasing decisions in real time.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "OpenAI"],
+  },
+  {
+    title: "Nuance Translate",
+    subtitle: "AI Translation App",
+    description:
+      "An AI-powered translation app that goes beyond literal conversion by capturing context, tone, and cultural nuance. Users can control regional variation, formality, plurality, and gender to generate precise, intent-driven translations.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "OpenAI"],
     image: "/projects/nuance.png",
   },
   {
-    title: "Loan Processing System",
-    subtitle: "Enterprise Finance",
+    title: "Lone",
+    subtitle: "Digital Lending",
     description:
-      "Built internal loan processing software that increased lending revenue by 62.6%.",
-    tags: ["TypeScript", "Node.js", "FinTech"],
+      "A streamlined short-term lending platform designed to simplify loan applications, approvals, and tracking through a clean, user-focused interface.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "FinTech"],
   },
   {
-    title: "Credit Analysis Platform",
-    subtitle: "Risk Systems",
+    title: "Bank OS",
+    subtitle: "Core Banking Middleware",
     description:
-      "Modernized API + frontend, reducing failed bureau calls and streamlining workflows.",
-    tags: ["React", "API Design", "Optimization"],
+      "A scalable middleware system that simulates core banking APIs, enabling reliable testing and development of financial integrations in a controlled environment.",
+    tags: ["Next.js", "API Design", "FinTech", "Open Banking"],
   },
   {
-    title: "Cloud Migration",
-    subtitle: "Core Banking",
+    title: "Xoom",
+    subtitle: "Video Chat",
     description:
-      "Migrated legacy system to Kubernetes cloud, reducing costs by 31% and achieving 99.6% uptime.",
-    tags: ["Kubernetes", "Cloud", "DevOps"],
-    image: "/projects/nuance.png",
+      "A real-time video chat application with authentication and live streaming, built to deliver seamless communication with low latency and a modern UI.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Clerk", "ShadCN", "Stream"],
   },
   {
-    title: "Restaurant Intranet",
-    subtitle: "Nationwide System",
+    title: "GPT Light",
+    subtitle: "AI Chat",
     description:
-      "Designed and deployed an internal platform using Next.js and Microsoft Graph.",
-    tags: ["Next.js", "Graph API", "Enterprise"],
-  },
-  {
-    title: "Loan Application Portal",
-    subtitle: "Customer Platform",
-    description:
-      "Improved UX and increased loan applications by 26% through a redesigned frontend.",
-    tags: ["React", "UX", "Frontend"],
-    image: "/projects/nuance.png",
+      "A lightweight, fast AI chat interface focused on simplicity and performance, providing quick access to conversational AI without unnecessary overhead.",
+    tags: ["Next.js", "OpenAI"],
   },
 ];
 
@@ -67,7 +65,8 @@ export default function Projects() {
           Personal Projects
         </h2>
         <p className="text-white/60 mt-2">
-          Passion projects focused on performance, scalability, and digital excellence
+          Passion projects focused on performance, scalability, and digital
+          excellence
         </p>
       </div>
 
@@ -115,13 +114,9 @@ export default function Projects() {
 
             {/* Content */}
             <div className="p-5">
-              <p className="text-xs text-white/40 mb-1">
-                {project.subtitle}
-              </p>
+              <p className="text-xs text-white/40 mb-1">{project.subtitle}</p>
 
-              <h3 className="text-base font-medium mb-2">
-                {project.title}
-              </h3>
+              <h3 className="text-base font-medium mb-2">{project.title}</h3>
 
               <p className="text-sm text-white/60 mb-4 leading-relaxed">
                 {project.description}
