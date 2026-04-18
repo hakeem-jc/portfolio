@@ -38,7 +38,6 @@ export default function Home() {
       {/* Glow gradient overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_40%)]" />
 
-      {/* Hero */}
       <section className="relative z-10 px-8 pb-16 max-w-6xl mx-auto">
         <FloatingNav navItems={navItems} />
         <Hero />
