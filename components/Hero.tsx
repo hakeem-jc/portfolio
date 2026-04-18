@@ -51,28 +51,46 @@ const Hero = () => {
 
           <div className="flex flex-col items-center mt-40 text-gray-200">
             <p className="text-center mb-2 text-sm md:text-lg lg:text-2xl">
-              I&apos;m Guessing You Want to Hear More
+              I&apos;m Sure You Want to Hear More
             </p>
             <p className="md:mt-10 my-5">
-              I&apos;m a <span className="font-bold">Full-Stack Developer</span>{" "}
+              I&apos;m a{" "}
+              <span className="font-bold">Senior Full-Stack Developer</span>{" "}
               with <span className="font-bold">7+</span> years of experience
-              crafting production-grade applications for the banking industry. I
-              specialize in designing and building responsive, user-friendly
-              front-ends using{" "}
-              <span className="font-bold">TypeScript and Next.js / React.</span>
+              building scalable, production-grade systems in the{" "}
+              <span className="font-bold">banking and enterprise space</span>. I
+              specialize in crafting high-performance, user-focused frontends
+              using{" "}
+              <span className="font-bold">TypeScript, React, and Next.js</span>,
+              while also designing robust backend systems with{" "}
+              <span className="font-bold">
+                Next.js, Express, and cloud-native architectures
+              </span>
+              .
               <span className="block mt-2">
-                I&apos;ve built and maintained a critical commercial lending
-                platform, maintained and upgraded a legacy one, modernized the
-                IT infrastructure of a major restaurant chain, and worked
-                closely with multiple international cross-functional agile teams
-                of developers, designers, testers, product managers, and other
-                stakeholders.
+                I&apos;ve led and contributed to systems that directly impact
+                business outcomes — including building loan processing platforms
+                that drove{" "}
+                <span className="font-bold">
+                  60%+ increases in lending revenue
+                </span>
+                , optimizing application performance to significantly improve
+                user satisfaction, and migrating critical infrastructure to the
+                cloud with <span className="font-bold">99.6% uptime</span>.
               </span>
               <span className="block mt-2">
-                My main focus these days is building applications for clients
-                from start-ups to large Jamaican corporations at work while
-                experimenting with fintech and AI engineering in my free time.
-                Now that you&apos;re all caught up, here&apos;s a snapshot of my
+                Beyond delivery, I&apos;ve mentored engineers, introduced
+                testing practices that improved deployment stability, and worked
+                closely with cross-functional teams across multiple countries to
+                ship reliable, scalable software.
+              </span>
+              <span className="block mt-2">
+                Lately, I&apos;ve been expanding into{" "}
+                <span className="font-bold">AI engineering</span> — integrating
+                LLM APIs, building validation pipelines, and experimenting with
+                intelligent systems — while continuing to deliver high-impact
+                applications for both startups and large enterprises. Now that
+                you&apos;re all caught up, here&apos;s a snapshot of my
                 skillset:
               </span>
             </p>
