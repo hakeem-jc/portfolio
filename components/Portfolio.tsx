@@ -10,7 +10,7 @@ type CaseStudy = {
 
 const caseStudies: CaseStudy[] = [
   {
-    title: "Banking API Simulator",
+    title: "Banking OS",
     description:
       "Built a scalable system to simulate core banking APIs for testing financial integrations.",
     tags: ["Next.js", "Prisma", "Playwright"],
@@ -31,14 +31,14 @@ const caseStudies: CaseStudy[] = [
 
 export default function Portfolio() {
   return (
-    <section className="relative z-10 max-w-6xl mx-auto px-8 py-24">
+    <section className="relative z-10 max-w-6xl mx-auto px-8 py-20">
       {/* Section Header */}
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
-          My Work
+          Work Projects
         </h2>
         <p className="text-white/60 mt-2 max-w-xl">
-          Selected work focused on performance, scalability, and digital excellence
+          Real-world systems I've developed, built for impact
         </p>
       </div>
 

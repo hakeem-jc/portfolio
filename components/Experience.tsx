@@ -48,7 +48,7 @@ const experiences: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section className="relative z-10 max-w-5xl mx-auto px-8 py-24">
+    <section className="relative z-10 max-w-5xl mx-auto px-8 pt-24">
       {/* Header */}
       <div className="text-center mb-20">
         <h2 className="text-3xl md:text-4xl font-semibold">
