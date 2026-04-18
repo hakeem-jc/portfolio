@@ -7,6 +7,7 @@ type Project = {
   subtitle: string;
   description: string;
   tags: string[];
+  image?: string; // optional
 };
 
 const projects: Project[] = [
@@ -16,6 +17,7 @@ const projects: Project[] = [
     description:
       "Improved performance and reduced load times, increasing user satisfaction from 36% to 84%.",
     tags: ["Next.js", "Performance", "UX"],
+    image: "/projects/nuance.png",
   },
   {
     title: "Loan Processing System",
@@ -37,6 +39,7 @@ const projects: Project[] = [
     description:
       "Migrated legacy system to Kubernetes cloud, reducing costs by 31% and achieving 99.6% uptime.",
     tags: ["Kubernetes", "Cloud", "DevOps"],
+    image: "/projects/nuance.png",
   },
   {
     title: "Restaurant Intranet",
@@ -51,6 +54,7 @@ const projects: Project[] = [
     description:
       "Improved UX and increased loan applications by 26% through a redesigned frontend.",
     tags: ["React", "UX", "Frontend"],
+    image: "/projects/nuance.png",
   },
 ];
 
@@ -82,15 +86,31 @@ export default function Projects() {
               hover:border-white/20 transition
             "
           >
-            {/* Preview / Placeholder */}
-            <div className="relative h-36 bg-white/5 flex items-center justify-center">
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
+            {/* Preview */}
+            <div className="relative h-36 overflow-hidden">
+              {project.image ? (
+                <>
+                  {/* Background Image */}
+                  <div
+                    className="absolute inset-0 bg-cover bg-center scale-100 group-hover:scale-105 transition duration-500"
+                    style={{ backgroundImage: `url(${project.image})` }}
+                  />
 
-              {/* layered mock UI blocks */}
-              <div className="relative opacity-30">
-                <div className="w-28 h-16 border border-white/10 rounded-md rotate-6" />
-                <div className="w-28 h-16 border border-white/10 rounded-md -rotate-6 absolute top-2 left-2" />
-              </div>
+                  {/* Dark overlay for readability */}
+                  <div className="absolute inset-0 bg-black/40" />
+                </>
+              ) : (
+                <div className="w-full h-full bg-white/5 flex items-center justify-center">
+                  {/* Placeholder */}
+                  <div className="relative opacity-30">
+                    <div className="w-28 h-16 border border-white/10 rounded-md rotate-6" />
+                    <div className="w-28 h-16 border border-white/10 rounded-md -rotate-6 absolute top-2 left-2" />
+                  </div>
+                </div>
+              )}
+
+              {/* Glow */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
             </div>
 
             {/* Content */}
