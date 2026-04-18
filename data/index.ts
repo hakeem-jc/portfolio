@@ -167,24 +167,6 @@ export const workExperience = [
   },
 ];
 
-export const socialMedia = [
-  {
-    id: 1,
-    img: "/link.svg",
-    src: "https://www.linkedin.com/in/hakeemclarke/",
-  },
-  {
-    id: 2,
-    img: "/git.svg",
-    src: "https://github.com/hakeem-jc",
-  },
-  {
-    id: 3,
-    img: "/dribbble.svg",
-    src: "https://dribbble.com/HakeemC",
-  },
-];
-
 export const workProjects = [
   {
     title: "Legacy Lending System",

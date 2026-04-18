@@ -5,7 +5,7 @@ import MagicButton from "./MagicButton";
 const Footer: FC = () => {
   return (
     <section>
-      <div className="flex flex-col items-center pb-12 text-center">
+      <div className="flex flex-col items-center pb-14 text-center">
         <h1 className="text-4xl font-semibold mb-4">
           Let’s build something <span className="text-purple">impactful</span>{" "}
           together
