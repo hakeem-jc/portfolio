@@ -4,7 +4,7 @@ import WorkProjects from "@/components/WorkProjects";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import { navItems } from "@/data";
-import Grid from "@/components/ui/grid/Grid";
+import BentoGrid from "@/components/BentoGrid";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -40,12 +40,12 @@ export default function Home() {
 
       {/* Hero */}
       <section className="relative z-10 px-8 pb-16 max-w-6xl mx-auto">
-          <FloatingNav navItems={navItems} />
-          <Hero />
-          <Grid />
-          <Experience />
-          <WorkProjects/>
-          <Projects />
+        <FloatingNav navItems={navItems} />
+        <Hero />
+        <BentoGrid />
+        <Experience />
+        <WorkProjects />
+        <Projects />
       </section>
       <Footer />
     </div>

@@ -92,13 +92,13 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Relocating to Spain",
+    title: "Open to Relocation",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
+    img: "/grid.svg",
+    spareImg: "/b4.svg",
   },
   {
     id: 3,
@@ -133,7 +133,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Want to get in touch?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
