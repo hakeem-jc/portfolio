@@ -2,15 +2,12 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
-
 import { cn } from "@/lib/utils";
-
-import { BackgroundGradientAnimation } from "./GradientBg";
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
-import MagicButton from "../../MagicButton";
+import MagicButton from "@/components/ui/MagicButton";
+import { gridItems } from "@/data";
 
-export const BentoGrid = ({
+export const BentoGridContainer = ({
   className,
   children,
 }: {
@@ -103,11 +100,6 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
-        )}
 
         <div
           className={cn(
@@ -124,8 +116,6 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
-
-          {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -181,3 +171,27 @@ export const BentoGridItem = ({
     </div>
   );
 };
+
+const BentoGrid = () => {
+  return (
+    <section>
+      <BentoGridContainer className="w-full">
+        {gridItems.map((item, i) => (
+          <BentoGridItem
+            id={item.id}
+            key={i}
+            title={item.title}
+            description={item.description}
+            className={item.className}
+            img={item.img}
+            imgClassName={item.imgClassName}
+            titleClassName={item.titleClassName}
+            spareImg={item.spareImg}
+          />
+        ))}
+      </BentoGridContainer>
+    </section>
+  );
+};
+
+export default BentoGrid;

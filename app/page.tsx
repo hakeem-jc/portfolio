@@ -1,8 +1,11 @@
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Hero from "@/components/Hero";
+import WorkProjects from "@/components/WorkProjects";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import BentoGrid from "@/components/BentoGrid";
+import Footer from "@/components/ui/Footer";
 import { navItems } from "@/data";
-import Grid from "@/components/ui/grid/Grid";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -35,11 +38,13 @@ export default function Home() {
       {/* Glow gradient overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.08),transparent_40%)]" />
 
-      {/* Hero */}
       <section className="relative z-10 px-8 pb-16 max-w-6xl mx-auto">
-          <FloatingNav navItems={navItems} />
-          <Hero />
-          <Grid />
+        <FloatingNav navItems={navItems} />
+        <Hero />
+        <BentoGrid />
+        <Experience />
+        <WorkProjects />
+        <Projects />
       </section>
       <Footer />
     </div>

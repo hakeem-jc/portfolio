@@ -1,6 +1,6 @@
 "use client";
 import { FaFileArrowDown } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
+import MagicButton from "./ui/MagicButton";
 import { skills } from "@/data";
 import { useInView } from "react-intersection-observer";
 import dynamic from "next/dynamic";
@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center mask-[radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative my-15 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="text-center max-w-3xl mb-8 mt-8 text-4xl font-extrabold tracking-wide leading-snug md:text-5xl xl:text-6xl text-white">
             Hakeem Clarke
@@ -55,7 +55,7 @@ const Hero = () => {
             </p>
             <p className="md:mt-10 my-5">
               I&apos;m a <span className="font-bold">Full-Stack Developer</span>{" "}
-              with <span className="font-bold">6+</span> years of experience
+              with <span className="font-bold">7+</span> years of experience
               crafting production-grade applications for the banking industry. I
               specialize in designing and building responsive, user-friendly
               front-ends using{" "}
