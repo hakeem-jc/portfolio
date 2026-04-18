@@ -1,6 +1,6 @@
 "use client";
 import { FaFileArrowDown } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
+import MagicButton from "./ui/MagicButton";
 import { skills } from "@/data";
 import { useInView } from "react-intersection-observer";
 import dynamic from "next/dynamic";

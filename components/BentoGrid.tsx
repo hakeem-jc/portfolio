@@ -4,7 +4,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 import { cn } from "@/lib/utils";
 import animationData from "@/data/confetti.json";
-import MagicButton from "@/components/MagicButton";
+import MagicButton from "@/components/ui/MagicButton";
 import { gridItems } from "@/data";
 
 export const BentoGridContainer = ({
